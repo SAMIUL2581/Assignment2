@@ -414,6 +414,14 @@
     </div>
   </div>
 </footer>
-
+<script>
+  document.querySelectorAll('button').forEach(button => {
+    if(button.textContent.trim() === "ADD TO CART") {
+      button.addEventListener('click', () => {
+        alert('Flower Added to Cart');
+      });
+    }
+  });
+</script>
   </body>
 </html>
